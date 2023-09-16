@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Spline+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+}
+
+
+body{
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);    
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    color: white;
+    overflow: hidden;
+}
+
+.head{
+    text-align: center;
+    transition: all 0.3s ease-in ;
+    font-family: 'Spline Sans', sans-serif;
+    letter-spacing: 2px;
+    font-size: clamp(2.5rem, 4vw , 4rem);
+    margin: 1.5em 0px 1em;
+}
+
+.quiz-container{
+    font-family: 'Poppins', sans-serif;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.question{
+    font-size: 1.8rem;
+    margin: 0px 0px 1em;
+}
+
+.options li{
+    margin: 20px 0px;
+    font-size: 1.3rem;
+}
+.options li label{
+    margin-left: 20px;
+}
+
+.btn{
+    margin-top: 20px;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #0093E9;
+    color: white;
+    transition: all .3s ease;
+    opacity: .6;
+}
+.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media screen and (max-width: 900px) {
+    .quiz-container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .quiz-container{
+        width: 95%;
+    }
+}
